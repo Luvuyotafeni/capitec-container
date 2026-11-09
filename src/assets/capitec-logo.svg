@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 56" role="img" aria-label="Capitec">
+  <circle cx="28" cy="28" r="22" fill="#0a4a8f"/>
+  <path d="M38 19a14 14 0 1 0 0 18" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="40" cy="14" r="5" fill="#e4002b"/>
+  <text x="60" y="38" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="700" fill="#0a4a8f" letter-spacing="-0.5">capitec</text>
+</svg>

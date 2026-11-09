@@ -1,0 +1,36 @@
+:root {
+  --blue: #0a4a8f; --blue-dark: #07325f; --blue-light: #e8f1fb;
+  --red: #e4002b; --red-dark: #b80022;
+  --ink: #14233a; --muted: #5b6b82; --line: #d5dfec; --bg: #f4f7fb; --white: #fff; --ok: #0b7a43;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; min-height: 100%; }
+body { font-family: "Segoe UI", system-ui, -apple-system, Roboto, Arial, sans-serif; color: var(--ink); background: var(--bg); line-height: 1.5; }
+h1, h2 { line-height: 1.15; margin: 0; }
+a { color: var(--blue); font-weight: 600; }
+:focus-visible { outline: 3px solid var(--red); outline-offset: 2px; }
+
+.btn { display: inline-flex; align-items: center; justify-content: center; min-height: 52px; padding: 0 28px; border-radius: 999px;
+  border: 2px solid transparent; font: inherit; font-weight: 700; font-size: 1rem; cursor: pointer; text-decoration: none; transition: background .15s, transform .1s; }
+.btn:active { transform: scale(.98); }
+.btn-primary { background: var(--red); color: #fff; } .btn-primary:hover { background: var(--red-dark); }
+.btn-ghost { background: transparent; color: #fff; border-color: rgba(255,255,255,.7); } .btn-ghost:hover { background: rgba(255,255,255,.12); }
+.btn-block { width: 100%; }
+.btn[disabled] { opacity: .55; cursor: not-allowed; }
+
+.card { background: var(--white); border-radius: 20px; box-shadow: 0 12px 40px rgba(10,74,143,.14); padding: 32px; width: 100%; max-width: 440px; }
+.shell { min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 24px; padding: 24px 16px;
+  background: linear-gradient(160deg, var(--blue-light) 0%, var(--bg) 60%); }
+.logo { height: 44px; width: auto; display: block; }
+
+.field { display: flex; flex-direction: column; gap: 6px; margin-bottom: 16px; }
+.field label { font-weight: 600; font-size: .92rem; }
+.field input { height: 52px; border: 1.5px solid var(--line); border-radius: 12px; padding: 0 14px; font: inherit; background: #fff; color: var(--ink); width: 100%; }
+.field input:focus { border-color: var(--blue); outline: 3px solid rgba(10,74,143,.2); }
+.field input.bad { border-color: var(--red); }
+.hint { color: var(--muted); font-size: .85rem; } .error { color: var(--red-dark); font-size: .85rem; font-weight: 600; }
+.pw { position: relative; } .pw input { padding-right: 76px; }
+.pw button { position: absolute; right: 8px; top: 8px; height: 36px; border: 0; background: transparent; color: var(--blue); font: inherit; font-weight: 700; cursor: pointer; padding: 0 10px; }
+.notice { background: #e7f6ee; color: var(--ok); border-radius: 12px; padding: 14px 16px; font-weight: 600; margin-bottom: 16px; }
+.small { text-align: center; color: var(--muted); font-size: .9rem; margin-top: 18px; }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
